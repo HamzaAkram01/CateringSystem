@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.cateringsystem.Dashboard"
+        android:label="@string/menu_home"
+        tools:layout="@layout/activity_dashboard" />
+
+    <fragment
+        android:id="@+id/nav_items"
+        android:name="com.example.cateringsystem.itemsActivity"
+        android:label="Items"
+        tools:layout="@layout/activity_items" />
+
+    <fragment
+        android:id="@+id/nav_estimation"
+        android:name="com.example.cateringsystem.EstimationActivity"
+        android:label="Estimate"
+        tools:layout="@layout/activity_estimation" />
+
+    <fragment
+        android:id="@+id/nav_logout"
+        android:name="com.example.cateringsystem.LogoActivity"
+        android:label="logout"
+        tools:layout="@layout/activity_logo" />
+</navigation>

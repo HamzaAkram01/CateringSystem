@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EstimationActivity">
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="387dp"
+        android:layout_height="65dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:background="@android:drawable/btn_dropdown"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.73" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="290dp"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="8dp"
+        android:text="Select Category:"
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/spinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="460dp"
+        android:background="@color/white"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.703">
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="117dp"
+            android:layout_height="32dp"
+            android:layout_below="@+id/relativeLayout2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="51dp"
+            android:layout_marginTop="51dp"
+            android:layout_marginEnd="243dp"
+            android:layout_marginBottom="32dp"
+            android:text="Total Amount:"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            tools:ignore="NotSibling" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="117dp"
+            android:layout_height="32dp"
+            android:layout_below="@+id/relativeLayout2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="51dp"
+            android:layout_marginTop="51dp"
+            android:layout_marginEnd="243dp"
+            android:layout_marginBottom="0dp"
+            android:text="After Discounts:"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            tools:ignore="NotSibling" />
+
+        <TextView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="410dp"
+            android:paddingTop="10dp"
+            android:text="ListView"
+            android:background="@color/bluesky"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="373dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="98dp"
+            android:background="@color/white"
+            android:stretchColumns="1,2,3,4,5">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="23dp"
+                    android:layout_height="match_parent"
+                    android:layout_column="1"
+                    android:padding="10dp"
+                    android:text="S.NO"
+                    android:textColor="@color/black"
+                    android:textSize="11dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="83dp"
+                    android:layout_height="match_parent"
+                    android:layout_column="1"
+                    android:padding="10dp"
+                    android:text="ITEM NAME"
+                    android:textColor="@color/black"
+                    android:textSize="11dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_column="1"
+                    android:padding="10dp"
+                    android:text="RATE"
+                    android:textColor="@color/black"
+                    android:textSize="11dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_column="1"
+                    android:padding="10dp"
+                    android:text="QTY"
+                    android:textColor="@color/black"
+                    android:textSize="11dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:layout_column="1"
+                    android:padding="10dp"
+                    android:text="AMOUNT"
+                    android:textColor="@color/black"
+                    android:textSize="11dp"
+                    android:textStyle="bold" />
+
+
+            </TableRow>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/tablerecycle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="117dp"
+            android:layout_height="32dp"
+            android:layout_below="@+id/relativeLayout2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="51dp"
+            android:layout_marginTop="51dp"
+            android:layout_marginEnd="243dp"
+            android:paddingTop="8dp"
+            android:layout_marginBottom="65dp"
+            android:text="Discounts: "
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            tools:ignore="NotSibling" />
+
+        <TextView
+            android:id="@+id/discount"
+            android:layout_width="117dp"
+            android:layout_height="32dp"
+            android:layout_below="@+id/relativeLayout2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="290dp"
+            android:layout_marginTop="51dp"
+            android:layout_marginEnd="4dp"
+            android:paddingTop="7dp"
+            android:layout_marginBottom="68dp"
+            android:text="Discounts"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            tools:ignore="NotSibling" />
+
+        <TextView
+            android:id="@+id/amount"
+            android:layout_width="117dp"
+            android:layout_height="32dp"
+            android:layout_below="@+id/relativeLayout2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="290dp"
+            android:layout_marginTop="51dp"
+            android:layout_marginEnd="4dp"
+            android:paddingTop="8dp"
+            android:layout_marginBottom="39dp"
+            android:text="Discounts"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            tools:ignore="NotSibling" />
+
+        <TextView
+            android:id="@+id/afterdis"
+            android:layout_width="117dp"
+            android:layout_height="32dp"
+            android:layout_below="@+id/relativeLayout2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="293dp"
+            android:layout_marginTop="51dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="4dp"
+            android:paddingTop="5dp"
+            android:text="Discounts"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            tools:ignore="NotSibling" />
+
+
+
+    </RelativeLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:background="@drawable/cercleshape"
+            android:backgroundTint="@color/bluesky"
+            android:padding="10dp"
+            android:onClick="back_button"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.998" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
